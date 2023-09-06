@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pet-alerts',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./pet-alerts.component.scss']
 })
 export class PetAlertsComponent {
+  @Input()
+  pet: string="";
+
+  // public share(){
+  //   alert("Pet name:"+this.pet);
+  // }
 
 }

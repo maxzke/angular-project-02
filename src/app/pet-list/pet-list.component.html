@@ -1,7 +1,22 @@
-<ul class="list-group list-group-item-action">
-  <li class="list-group-item">{{ pets[0] }}</li>
-  <li class="list-group-item">{{ pets[1] }}</li>
-  <li class="list-group-item">{{ pets[2] }}</li>
-  <li class="list-group-item">{{ pets[3] }}</li>
-  <li class="list-group-item">{{ pets[4] }}</li>
+<ul class="list-group">
+  <li class="list-group-item">
+    {{ pets[0] }}<br />
+    <app-pet-alerts [pet]="pets[0]"></app-pet-alerts>
+  </li>
+  <li class="list-group-item">
+    {{ pets[1] }}<br />
+    <app-pet-alerts [pet]="pets[1]"></app-pet-alerts>
+  </li>
+  <li class="list-group-item">
+    {{ pets[2] }}<br />
+    <app-pet-alerts [pet]="pets[2]"></app-pet-alerts>
+  </li>
+  <li class="list-group-item">
+    {{ pets[3] }}<br />
+    <app-pet-alerts [pet]="pets[3]"></app-pet-alerts>
+  </li>
+  <li class="list-group-item">
+    {{ pets[4] }}<br />
+    <app-pet-alerts [pet]="pets[4]"></app-pet-alerts>
+  </li>
 </ul>

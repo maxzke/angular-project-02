@@ -2,7 +2,7 @@
   type="button"
   class="btn btn-primary"
   data-bs-toggle="modal"
-  data-bs-target="#exampleModal"
+  [attr.data-bs-target]="'#exampleModal-' + pet"
 >
   Share {{ pet }}
 </button>
@@ -10,7 +10,7 @@
 <!-- Modal -->
 <div
   class="modal fade"
-  id="exampleModal"
+  id="exampleModal-{{ pet }}"
   tabindex="-1"
   aria-labelledby="exampleModalLabel"
   aria-hidden="true"

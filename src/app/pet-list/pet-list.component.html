@@ -1,5 +1,5 @@
 <ul class="list-group">
-  <li class="list-group-item">
+  <!-- <li class="list-group-item">
     {{ pets[0] }}<br />
     <app-pet-alerts [pet]="pets[0]"></app-pet-alerts>
   </li>
@@ -18,5 +18,9 @@
   <li class="list-group-item">
     {{ pets[4] }}<br />
     <app-pet-alerts [pet]="pets[4]"></app-pet-alerts>
+  </li> -->
+  <li class="list-group-item" *ngFor="let pet of pets">
+    {{ pets[4] }}<br />
+    <app-pet-alerts [pet]="pet"></app-pet-alerts>
   </li>
 </ul>

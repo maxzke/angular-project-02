@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class PetListComponent {
-  private _pets:string[] = ["cats","dog","Cock","Hen","Chick","Pig"];
+  private _pets:string[] = ["cat","dog","cock","hen","chick","pig"];
 
   private _nombre: string = "mi nombre";
 

@@ -19,8 +19,11 @@
     {{ pets[4] }}<br />
     <app-pet-alerts [pet]="pets[4]"></app-pet-alerts>
   </li> -->
-  <li class="list-group-item" *ngFor="let pet of pets">
-    {{ pets[4] }}<br />
-    <app-pet-alerts [pet]="pet"></app-pet-alerts>
+  <li class="list-group-item d-flex" *ngFor="let pet of pets">
+    <div style="width: 80px">
+      <img src="./assets/img/icon_logo.png" width="60px" />
+      {{ pet }}
+    </div>
+    <div class="ml-2"><app-pet-alerts [pet]="pet"></app-pet-alerts></div>
   </li>
 </ul>

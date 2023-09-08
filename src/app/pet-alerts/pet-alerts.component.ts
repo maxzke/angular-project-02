@@ -8,11 +8,11 @@ import { Component, Input } from '@angular/core';
 export class PetAlertsComponent {
   @Input()
   pet: string="";
-  public cont:number = 0
+  
+  public image:string="";
   
   public share(){
-
-    alert("Pet name:"+this.pet);
+    this.image = "./assets/img/"+this.pet+".png";
   }
 
 }

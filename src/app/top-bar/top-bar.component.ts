@@ -17,11 +17,12 @@ export class TopBarComponent {
   public get sea(): string[] {
     return this._sea;
   }
-  constructor(){
-    this._mostrarListado = [...this.farm,...this.sea];
-  }
   public set sea(value: string[]) {
     this._sea = value;
+  }
+
+  constructor(){
+    this._mostrarListado = [...this.farm,...this.sea];
   }
   
   private _mostrarListado: string[] = [];
@@ -33,7 +34,7 @@ export class TopBarComponent {
     this._mostrarListado = value;
   }
   public selectFarm(){
-    this._mostrarListado = this.farm;
+    this.mostrarListado = this.farm;
   }
   public selectSea(){
     this._mostrarListado = this.sea;

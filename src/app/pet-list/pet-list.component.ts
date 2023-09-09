@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-pet-list',
@@ -10,6 +11,13 @@ export class PetListComponent {
   @Input()
   listadoPets:string[] = [];
 
+  private _animal: string = "";
+  public get animal(): string {
+    return this._animal;
+  }
+  public set animal(value: string) {
+    this._animal = value;
+  }
 
   public get pets(): string[]{
     return this.listadoPets;

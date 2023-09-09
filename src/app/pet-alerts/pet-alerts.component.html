@@ -19,7 +19,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">{{ pet }}</h1>
         <button
           type="button"
           class="btn-close"
@@ -27,8 +27,7 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="modal-body">
-        {{ pet }}
+      <div class="modal-body text-center">
         <img [src]="image" width="320px" />
       </div>
       <div class="modal-footer">

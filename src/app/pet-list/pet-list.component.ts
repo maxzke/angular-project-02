@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 
 export class PetListComponent {
+  
   private _pets:string[] = ["cat","dog","cock","hen","chick","pig"];
+
+  constructor(){
+     
+  }
 
   private _nombre: string = "mi nombre";
 
@@ -17,4 +22,8 @@ export class PetListComponent {
   public set pets(value:string[]){
     this._pets = value;
   }
+  public  addPets(value:string){
+    this._pets.push(value);
+  }
+  
 }

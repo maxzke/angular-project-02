@@ -18,10 +18,18 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Farm</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            href="#"
+            (click)="selectFarm()"
+            >Farm</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Sea</a>
+          <a class="nav-link" aria-current="page" href="#" (click)="selectSea()"
+            >Sea</a
+          >
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -44,3 +52,5 @@
     </div>
   </div>
 </nav>
+
+<app-pet-list [listadoPets]="mostrarListado"></app-pet-list>

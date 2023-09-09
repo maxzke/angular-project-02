@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pet-list',
@@ -7,23 +7,18 @@ import { Component } from '@angular/core';
 })
 
 export class PetListComponent {
-  
-  private _pets:string[] = ["cat","dog","cock","hen","chick","pig"];
+  @Input()
+  listadoPets:string[] = [];
 
-  constructor(){
-     
-  }
-
-  private _nombre: string = "mi nombre";
 
   public get pets(): string[]{
-    return this._pets;
+    return this.listadoPets;
   }
   public set pets(value:string[]){
-    this._pets = value;
+    this.listadoPets = value;
   }
   public  addPets(value:string){
-    this._pets.push(value);
+    this.listadoPets.push(value);
   }
   
 }

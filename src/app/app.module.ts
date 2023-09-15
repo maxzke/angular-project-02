@@ -2,19 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { PetListComponent } from './pet-list/pet-list.component';
-import { PetAlertsComponent } from './pet-alerts/pet-alerts.component';
+import { TopBarModule } from './pet/Component/top-bar/top-bar.module';
+import { TopBarComponent } from './pet/Component/top-bar/top-bar.component';
+import { PetModule } from './pet/pet.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TopBarComponent,
-    PetListComponent,
-    PetAlertsComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TopBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

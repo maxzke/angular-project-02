@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgModel } from '@angular/forms';
+import { Pet } from '../../Inteface/pet.interface';
 
 @Component({
   selector: 'app-pet-list',
@@ -9,7 +10,9 @@ import { NgModel } from '@angular/forms';
 
 export class PetListComponent {
   @Input()
-  listadoPets:string[] = [];
+  public listadoPets:string[] = [];
+
+  //private mascotas:Pet = [];
 
   private _animal: string = "";
   public get animal(): string {
@@ -25,8 +28,9 @@ export class PetListComponent {
   public set pets(value:string[]){
     this.listadoPets = value;
   }
-  public  addPets(value:string){
-    this.listadoPets.push(value);
+  public  addPets():void{
+    let entrada:any = prompt("data", "");
+    this.listadoPets.push(entrada);
   }
   
 }

@@ -10,7 +10,7 @@ import { Pet } from '../../Inteface/pet.interface';
 
 export class PetListComponent {
   @Input()
-  public listadoPets:string[] = [];
+  public listadoPets:Pet[] = [];
 
   //private mascotas:Pet = [];
 
@@ -22,15 +22,15 @@ export class PetListComponent {
     this._animal = value;
   }
 
-  public get pets(): string[]{
+  public get pets(): Pet[]{
     return this.listadoPets;
   }
-  public set pets(value:string[]){
+  public set pets(value:Pet[]){
     this.listadoPets = value;
   }
   public  addPets():void{
     let entrada:any = prompt("data", "");
-    this.listadoPets.push(entrada);
+    this.listadoPets.push(entrada.name);
   }
   
 }

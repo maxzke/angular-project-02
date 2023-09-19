@@ -1,4 +1,4 @@
 export interface Pet{
-    name:"",
-    type?:""
+    name:string,
+    type?:string
 }

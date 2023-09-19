@@ -1,0 +1,12 @@
+<h1>Pet add</h1>
+<form action="#" class="row">
+  <input
+    type="text"
+    class="form-control"
+    name="name"
+    id="name"
+    [(ngModel)]="pet.name"
+  />
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+<pre>{{ pet | json }}</pre>

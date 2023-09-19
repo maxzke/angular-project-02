@@ -22,14 +22,14 @@
   <li class="list-group-item d-flex" *ngFor="let pet of pets">
     <div style="width: 150px">
       <img src="./assets/img/icon_logo.png" width="60px" />
-      {{ pet }}
+      {{ pet.name }}
     </div>
     <div class="ml-2">
-      <app-pet-alerts [pet]="pet"></app-pet-alerts>
+      <app-pet-alerts [pet]="pet.name"></app-pet-alerts>
     </div>
   </li>
 </ul>
-
+<app-pet-add></app-pet-add>
 <button class="btn btn-primary" type="button" (click)="addPets()">
   Agregar
 </button>

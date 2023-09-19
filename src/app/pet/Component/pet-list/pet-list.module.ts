@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PetListComponent } from './pet-list.component';
 import { PetAlertsModule } from '../pet-alerts/pet-alerts.module';
+import { PetAddModule } from '../pet-add/pet-add.module';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { PetAlertsModule } from '../pet-alerts/pet-alerts.module';
   ],
   imports: [
     CommonModule,
-    PetAlertsModule
+    PetAlertsModule,
+    PetAddModule
   ],
   exports:[
     PetListComponent

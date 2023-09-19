@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TopBarModule } from './pet/Component/top-bar/top-bar.module';
-import { TopBarComponent } from './pet/Component/top-bar/top-bar.component';
-import { PetModule } from './pet/pet.module';
+import { PetAddModule } from './pet/Component/pet-add/pet-add.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +11,8 @@ import { PetModule } from './pet/pet.module';
   ],
   imports: [
     BrowserModule,
-    TopBarModule
+    TopBarModule,
+    PetAddModule
   ],
   providers: [],
   bootstrap: [AppComponent]
